@@ -33,6 +33,3 @@ def fl_demvotes():
                 fl_dem_votes.append(demvotes)  # Appending each output to the list
 
 # print("--republican votes:", fl_rep_votes, "\n--democrat votes:", fl_dem_votes)
-
-
-fl_repvotes(), fl_demvotes()
