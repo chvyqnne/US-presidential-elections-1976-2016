@@ -1,0 +1,3 @@
+#!/Users/chvyqnne/Documents/GitHub/CSC-148-final-project/venv/bin/python
+from numba.pycc import main
+main()
