@@ -18,7 +18,8 @@ def fl_repvotes():
             if row[1] == state and row[8] == "republican":  # Values to Search for
                 repvotes = row[10]
                 print(row[1], "in", row[0], "had", row[10], "votes for the Republican party.")  # Desired Output Layout
-                return fl_rep_votes.append(repvotes)  # Appending each output to the list
+                fl_rep_votes.append(repvotes)  # Appending each output to the list
+        return fl_rep_votes
 
 
 def fl_demvotes():
@@ -31,11 +32,10 @@ def fl_demvotes():
             demvotes = row[10]
             if row[1] == state and row[8] == "democrat":  # Values to Search for
                 print(row[1], "in", row[0], "had", row[10], "votes for the Democratic party.")  # Desired Output Layout
-                return fl_dem_votes.append(demvotes)  # Appending each output to the list
+                fl_dem_votes.append(demvotes)  # Appending each output to the list
+        return fl_dem_votes
 
 # print("--republican votes:", fl_rep_votes, "\n--democrat votes:", fl_dem_votes)
-
-
 
 
 def florida_votes_overtime():
