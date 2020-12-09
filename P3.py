@@ -16,7 +16,7 @@ def rep_states2012():
         for row in myfile_reader:
             if row[0] == year and row[8] == "republican" and row[14] > "62.29":  # Values to Search for
                 print(row[1], "with a supporting rate of", row[14])  # Desired Output Layout
-                rep_states_2012.append(row[14])  # Appending each output to the list
+                return rep_states_2012.append(row[14])  # Appending each output to the list
 
 
 print("\n")  # For Organization
@@ -31,7 +31,7 @@ def dem_states2012():
         for row in myfile_reader:
             if row[0] == year and row[8] == "democrat" and row[14] > "61.00":  # Values to Search for
                 print(row[1], "with a supporting rate of", row[14])  # Desired Output Layout
-                dem_states_2012.append(row[14])  # Appending each output to the list
+                return dem_states_2012.append(row[14])  # Appending each output to the list
 
 
 print("\n")  # For Organization
@@ -46,7 +46,7 @@ def rep_states2016():
         for row in myfile_reader:
             if row[0] == year and row[8] == "republican" and row[14] > "62.50":  # Values to Search for
                 print(row[1], "with a supporting rate of", row[14])  # Desired Output Layout
-                rep_states_2016.append(row[14])  # Appending each output to the list
+                return rep_states_2016.append(row[14])  # Appending each output to the list
 
 
 print("\n")  # For Organization
@@ -61,7 +61,7 @@ def dem_states2016():
         for row in myfile_reader:
             if row[0] == year and row[8] == "democrat" and row[14] > "59.00":  # Values to Search for
                 print(row[1], "with a supporting rate of", row[14])  # Desired Output Layout
-                dem_states_2016.append(row[14])  # Appending each output to the list
+                return dem_states_2016.append(row[14])  # Appending each output to the list
 
 
 print("\n")  # For Organization
