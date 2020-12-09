@@ -3,6 +3,7 @@
 
 import pandas
 import csv
+import matplotlib.pyplot as plt
 
 file = pandas.read_csv("1976-2016-president.csv")  # Import the file to Python
 
@@ -35,4 +36,19 @@ def fl_demvotes():
 # print("--republican votes:", fl_rep_votes, "\n--democrat votes:", fl_dem_votes)
 
 
-fl_repvotes(), fl_demvotes()
+
+
+def florida_votes_overtime():
+    """
+    Plots total number of votes in the U.S. from 2000-2016 in a line graph using data from total_votes()
+    """
+
+    data = fl_repvotes()
+    plt.plot(data, color="g")
+    plt.title("Florida Votes Over Time 1976-2016 for the Republican Party")
+    plt.xlabel("Year")
+    plt.ylabel("Votes")
+    return plt.show()
+
+
+florida_votes_overtime()
