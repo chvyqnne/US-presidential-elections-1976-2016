@@ -1,6 +1,6 @@
 # Final Project Problem 4
 # Cheyanne Cabang & Ricardo Sauerbrey
-# jfsjdj
+
 import os
 os.environ["PROJ_LIB"] = "Users\Ricardo\anaconda3\pkgs\proj-7.2.0-h3e70539_0\Library\lib"  # I had to do this for
 # basemap to work. Plz update to personal library
