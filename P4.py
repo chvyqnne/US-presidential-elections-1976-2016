@@ -4,6 +4,7 @@
 import pandas
 import csv
 import matplotlib.pyplot as plt
+import itertools
 
 
 df = pandas.read_csv("1976-2016-president.csv")  # Import the file to Python
@@ -24,11 +25,12 @@ def fl_repvotes():
         for row in myfile_reader:
             if row[1] == state and row[8] == "republican":  # Values to Search for
                 repvotes = row[10]
-                year = row[0]
                 print(row[1], "in", row[0], "had", row[10], "votes for the Republican party.")  # Desired Output Layout
-                fl_rep_votes.append([year, repvotes])  # Appending each output to the list
+                fl_rep_votes.append([repvotes])  # Appending each output to the list
+                new_fl_rep_votes = list(itertools.chain.from_iterable(fl_rep_votes))
+                new2_fl_rep_votes = [int(i) for i in new_fl_rep_votes]
 
-        return fl_rep_votes
+        return new2_fl_rep_votes
 
 
 def fl_demvotes():
@@ -60,11 +62,12 @@ def florida_votes_plot():
     """
 
     data = fl_repvotes()
-    year = df["year"]
-    plt.plot(year, data, color="r")
+    year = [1976, 1980, 1984, 1988, 1992, 1996, 2000, 2004, 2008, 2012, 2016]
+    plt.plot(year, data, color='red')
     plt.title("Florida Votes Over Time 1976-2016 for the Republican Party")
     plt.xlabel("Year")
-    plt.ylabel("Votes")
+    plt.ylabel("Votes (millions)")
     return plt.show()
+
 
 florida_votes_plot()
