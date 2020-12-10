@@ -1,0 +1,21 @@
+{
+  "arch": "x86_64",
+  "build": "h3e70539_0",
+  "build_number": 0,
+  "constrains": [
+    "proj4 ==999999999999"
+  ],
+  "depends": [
+    "libcurl >=7.71.1,<8.0a0",
+    "libtiff >=4.1.0,<5.0a0",
+    "sqlite >=3.33.0,<4.0a0",
+    "vc >=14.1,<15.0a0",
+    "vs2015_runtime >=14.16.27012"
+  ],
+  "license": "MIT",
+  "name": "proj",
+  "platform": "win",
+  "subdir": "win-64",
+  "timestamp": 1604236393584,
+  "version": "7.2.0"
+}
