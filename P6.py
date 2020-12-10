@@ -12,6 +12,10 @@ from matplotlib.patches import Polygon
 
 
 def us_map_2016():
+    """
+    Color-coded map of the results of 2016 U.S. Presidential Election
+    """
+
     m = Basemap(llcrnrlon=-119,
                 llcrnrlat=22,
                 urcrnrlon=-64,
