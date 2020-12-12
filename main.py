@@ -3,6 +3,7 @@ import P2
 import P3
 import P4
 import P6
+import P7
 
 
 def main():
@@ -13,6 +14,7 @@ def main():
     print("5. View Florida's Republican votes from 1976-2016")
     print("6. View Florida's Democrat votes from 1976-2016")
     print("7. View a color-coded map of the 2016 U.S. Presidential Election results")
+    print("8. View third party votes in the U.S. from 1976-2016")
 
     choice = int(input("Choose one option (ex: 1) "))
 
@@ -43,6 +45,9 @@ def main():
         P4.florida_dem_votes_plot()
     elif choice == 7:
         print(P6.us_map_2016())
+    elif choice == 8:
+        print(P7.total_non_rd())
+        P7.total_non_rd_map()
     else:
         main()
 
