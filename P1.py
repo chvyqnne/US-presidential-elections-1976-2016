@@ -36,5 +36,8 @@ def total_votes_map():
     plt.title("Total Votes in the U.S. From 2000-2016")
     plt.xlabel("Year")
     plt.ylabel("Votes")
+    plt.savefig("totalvotes.png")
     return plt.show()
 
+
+total_votes_map()

@@ -1,6 +1,3 @@
-# Final Project Problem 4
-# Cheyanne Cabang & Ricardo Sauerbrey
-
 import pandas
 import csv
 import matplotlib.pyplot as plt
@@ -66,6 +63,7 @@ def florida_rep_votes_plot():
     plt.title("Florida Votes Over Time 1976-2016 for the Republican Party")
     plt.xlabel("Year")
     plt.ylabel("Votes (millions)")
+    plt.savefig("flrepvotes.png")
     return plt.show()
 
 
@@ -83,6 +81,7 @@ def florida_dem_votes_plot():
     plt.title("Florida Votes Over Time 1976-2016 for the Democratic Party")
     plt.xlabel("Year")
     plt.ylabel("Votes (millions)")
+    plt.savefig("fldemvotes.png")
     return plt.show()
 
 

@@ -1,10 +1,6 @@
-# Final Project Question 3
-# Cheyanne Cabang & Ricardo Sauerbrey
-
 import pandas as pd
 import csv
 import matplotlib.pyplot as plt
-import numpy as np
 
 file = pd.read_csv("1976-2016-president.csv")  # Import the file to Python
 
