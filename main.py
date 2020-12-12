@@ -29,14 +29,18 @@ def main():
         year = int(input("Choose an election year. Type in either 2012 or 2016: "))
         if year == 2012:
             print(P3.rep_states2012())
+            P3.rep_states_2012_plot()
         elif year == 2016:
             print(P3.rep_states2016())
+            P3.rep_states_2016_plot()
     elif choice == 4:
         year = int(input("Choose an election year. Type in either 2012 or 2016: "))
         if year == 2012:
             print(P3.dem_states2012())
+            P3.dem_states_2012_plot()
         elif year == 2016:
             print(P3.dem_states2016())
+            P3.dem_states_2016_plot()
     elif choice == 5:
         print(P4.fl_repvotes())
         P4.florida_rep_votes_plot()
